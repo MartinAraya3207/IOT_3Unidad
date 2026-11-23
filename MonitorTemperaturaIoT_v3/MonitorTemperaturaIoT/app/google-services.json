@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "543185949318",
+    "project_id": "proyecto-android1-a0486",
+    "storage_bucket": "proyecto-android1-a0486.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543185949318:android:b24725472424eda013f707",
+        "android_client_info": {
+          "package_name": "com.example.monitortemperaturaiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtPtgEQBxkl8IZID6mh9D15K4gtOF7ums"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
