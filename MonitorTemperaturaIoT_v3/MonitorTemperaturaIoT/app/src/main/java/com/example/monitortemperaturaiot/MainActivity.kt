@@ -79,25 +79,32 @@ private fun MonitorTemperaturaApp() {
     var error by remember { mutableStateOf("") }
 
     DisposableEffect(auth) {
-        val listener = FirebaseAuth.AuthStateListener { usuario = it.currentUser }
+        val listener = FirebaseAuth.AuthStateListener {
+            usuario = it.currentUser
+        }
         auth.addAuthStateListener(listener)
         onDispose { auth.removeAuthStateListener(listener) }
     }
 
-    val actual = usuario
-    if (actual == null) {
+    if (usuario == null) {
         PantallaLogin(
             error = error,
             onAccion = { correo, clave, crear ->
                 error = ""
+
                 if (correo.isBlank() || clave.length < 6) {
                     error = "Ingresa un correo y una contraseña de al menos 6 caracteres."
                 } else {
                     val tarea = if (crear) {
-                        auth.createUserWithEmailAndPassword(correo.trim(), clave)
+                        auth.createUserWithEmailAndPassword(
+                            correo.trim(), clave
+                        )
                     } else {
-                        auth.signInWithEmailAndPassword(correo.trim(), clave)
+                        auth.signInWithEmailAndPassword(
+                            correo.trim(), clave
+                        )
                     }
+
                     tarea.addOnCompleteListener { resultado ->
                         if (!resultado.isSuccessful) {
                             error = resultado.exception?.localizedMessage
@@ -109,15 +116,18 @@ private fun MonitorTemperaturaApp() {
         )
     } else {
         PantallaMonitoreo(
-            correo = actual.email ?: "Usuario",
-            uid = actual.uid,
+            correo = usuario?.email ?: "Usuario",
+            uid = usuario?.uid ?: "",
             onSalir = { auth.signOut() }
         )
     }
 }
 
 @Composable
-private fun PantallaLogin(error: String, onAccion: (String, String, Boolean) -> Unit) {
+private fun PantallaLogin(
+    error: String,
+    onAccion: (String, String, Boolean) -> Unit
+) {
     var correo by remember { mutableStateOf("") }
     var clave by remember { mutableStateOf("") }
     var crearCuenta by remember { mutableStateOf(false) }
@@ -130,7 +140,11 @@ private fun PantallaLogin(error: String, onAccion: (String, String, Boolean) -> 
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Monitor de Temperatura IoT", style = MaterialTheme.typography.headlineMedium)
+        Text(
+            "Monitor de Temperatura IoT",
+            style = MaterialTheme.typography.headlineMedium
+        )
+
         Spacer(Modifier.height(8.dp))
         Text(if (crearCuenta) "Crear cuenta" else "Iniciar sesión")
         Spacer(Modifier.height(24.dp))
@@ -142,7 +156,9 @@ private fun PantallaLogin(error: String, onAccion: (String, String, Boolean) -> 
             singleLine = true,
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(Modifier.height(12.dp))
+
         OutlinedTextField(
             value = clave,
             onValueChange = { clave = it },
@@ -151,16 +167,34 @@ private fun PantallaLogin(error: String, onAccion: (String, String, Boolean) -> 
             singleLine = true,
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(Modifier.height(16.dp))
-        Button(onClick = { onAccion(correo, clave, crearCuenta) }, modifier = Modifier.fillMaxWidth()) {
+
+        Button(
+            onClick = { onAccion(correo, clave, crearCuenta) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
             Text(if (crearCuenta) "Crear cuenta" else "Iniciar sesión")
         }
-        TextButton(onClick = { crearCuenta = !crearCuenta }) {
-            Text(if (crearCuenta) "Ya tengo una cuenta" else "Crear cuenta nueva")
+
+        TextButton(
+            onClick = {
+                crearCuenta = !crearCuenta
+            }
+        ) {
+            Text(
+                if (crearCuenta) "Ya tengo una cuenta"
+                else "Crear cuenta nueva"
+            )
         }
+
         if (error.isNotBlank()) {
-            Text(error, color = MaterialTheme.colorScheme.error)
+            Text(
+                error,
+                color = MaterialTheme.colorScheme.error
+            )
         }
+
         Spacer(Modifier.height(12.dp))
         Text(
             "Los usuarios deben estar habilitados en Firebase Authentication.",
