@@ -1,0 +1,32 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+
+    match /usuarios/{uid} {
+      allow create, read, update: if signedIn() && request.auth.uid == uid;
+      allow delete: if false;
+    }
+
+    // Estado y ordenes del Arduino: un documento por usuario (lo usan la app y el puente).
+    match /arduino/{uid} {
+      allow read, write: if signedIn() && request.auth.uid == uid;
+    }
+
+    match /temperaturas/{recordId} {
+      // Historial compartido: cualquier usuario autenticado puede leerlo.
+      allow read: if signedIn();
+      // Cada usuario solo crea registros a su nombre y con valores plausibles.
+      allow create: if signedIn()
+        && request.resource.data.usuarioUid == request.auth.uid
+        && request.resource.data.temperatura is number
+        && request.resource.data.temperatura >= -50
+        && request.resource.data.temperatura <= 150
+        && request.resource.data.usuarioEmail is string
+        && request.resource.data.fecha is timestamp;
+      allow update: if false;
+      // Cada usuario solo puede eliminar sus propios registros.
+      allow delete: if signedIn() && resource.data.usuarioUid == request.auth.uid;
+    }
+  }
+}

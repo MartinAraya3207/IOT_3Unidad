@@ -1,0 +1,6 @@
+MOCKUP DEL PROYECTO
+
+Archivo editable: MOCKUP/Mockup_Monitor_Temperatura_IoT.drawio
+
+Abrir en https://app.diagrams.net/ usando File > Open From > Device.
+Este archivo es el prototipo visual y debe mantenerse alineado con las pantallas implementadas en MainActivity.kt. No es código ejecutable de Android.

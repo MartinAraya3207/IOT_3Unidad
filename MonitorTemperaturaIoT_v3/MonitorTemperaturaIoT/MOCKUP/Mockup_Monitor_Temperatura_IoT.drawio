@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-27T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="mockup-iot" name="Mockup Monitor IoT">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="MONITOR DE TEMPERATURA IoT — MOCKUP DE INTERFAZ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#12304A;strokeColor=#12304A;fontColor=#FFFFFF;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="1290" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Prototipo visual editable • Android / Material Design • Firebase Firestore" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#426174;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="85" width="1290" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lab0" value="1. INICIO DE SESIÓN" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=16;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="65" y="135" width="240" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="phone0" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#183B56;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="85" y="170" width="200" height="440" as="geometry"/>
+        </mxCell>
+        <mxCell id="status0" value="9:41  •  Wi-Fi  •  85%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7EEF4;strokeColor=none;fontColor=#29475C;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="93" y="180" width="184" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="apphead0" value="TEMP IoT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#176B87;strokeColor=#176B87;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="93" y="205" width="184" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="lab1" value="2. MONITOREO" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=16;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="385" y="135" width="240" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="phone1" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#183B56;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="405" y="170" width="200" height="440" as="geometry"/>
+        </mxCell>
+        <mxCell id="status1" value="9:41  •  Wi-Fi  •  85%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7EEF4;strokeColor=none;fontColor=#29475C;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="413" y="180" width="184" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="apphead1" value="TEMP IoT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#176B87;strokeColor=#176B87;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="413" y="205" width="184" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="lab2" value="3. ACTIVADOR" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=16;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="705" y="135" width="240" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="phone2" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#183B56;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="725" y="170" width="200" height="440" as="geometry"/>
+        </mxCell>
+        <mxCell id="status2" value="9:41  •  Wi-Fi  •  85%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7EEF4;strokeColor=none;fontColor=#29475C;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="733" y="180" width="184" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="apphead2" value="TEMP IoT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#176B87;strokeColor=#176B87;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="733" y="205" width="184" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="lab3" value="4. HISTORIAL" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=16;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1025" y="135" width="240" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="phone3" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#183B56;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="170" width="200" height="440" as="geometry"/>
+        </mxCell>
+        <mxCell id="status3" value="9:41  •  Wi-Fi  •  85%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7EEF4;strokeColor=none;fontColor=#29475C;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1053" y="180" width="184" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="apphead3" value="TEMP IoT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#176B87;strokeColor=#176B87;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1053" y="205" width="184" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginIcon" value="🌡" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D7F0F5;strokeColor=#58A6B9;fontColor=#176B87;fontSize=26;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="157" y="255" width="56" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginWelcome" value="Bienvenido" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="170" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginUser" value="Correo / usuario" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8CBD6;fontColor=#587080;fontSize=11;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="103" y="360" width="164" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginPass" value="Contraseña  •••••••" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8CBD6;fontColor=#587080;fontSize=11;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="103" y="405" width="164" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginBtn" value="INICIAR SESIÓN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#176B87;strokeColor=#176B87;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="103" y="455" width="164" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginReg" value="¿No tienes cuenta? Registrarse" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#176B87;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="95" y="505" width="180" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="loginNote" value="Autenticación Firebase" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#6C8290;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="95" y="555" width="180" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="monConn" value="● Conectado a Firestore" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF5E8;strokeColor=#7CC9A0;fontColor=#176B4B;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="255" width="170" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="monLabel" value="Temperatura actual" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#536B7A;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="415" y="300" width="180" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="monTemp" value="24,5 °C" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F4F8;strokeColor=#58A6B9;fontColor=#12304A;fontSize=28;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="330" width="170" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="monDate" value="Último registro&#10;Hoy • 10:42" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#607785;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="420" width="170" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="monRefresh" value="ACTUALIZAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#176B87;strokeColor=#176B87;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="425" y="475" width="160" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="monNav" value="Monitoreo     Activador" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7EEF4;strokeColor=#B8CBD6;fontColor=#29475C;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="413" y="565" width="184" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="actConn" value="Dispositivo: conectado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF5E8;strokeColor=#7CC9A0;fontColor=#176B4B;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="255" width="170" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="actTitle" value="Control del activador" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=15;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="735" y="300" width="180" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="actLed" value="ACTIVADOR" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D7F0F5;strokeColor=#58A6B9;fontColor=#176B87;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="780" y="340" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="actOn" value="ENCENDER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#198754;strokeColor=#198754;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="743" y="450" width="164" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="actOff" value="APAGAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65B5B;fontColor=#B13C3C;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="743" y="495" width="164" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="actWarn" value="Solo para dispositivo compatible" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#7A6670;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="733" y="550" width="184" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="histTitle" value="Historial de temperaturas" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#12304A;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="255" width="180" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="hist0" value="26,0 °C     •     10:42" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8CBD6;fontColor=#29475C;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="300" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="hist1" value="24,5 °C     •     10:30" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8CBD6;fontColor=#29475C;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="352" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="hist2" value="23,8 °C     •     10:15" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8CBD6;fontColor=#29475C;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="404" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="hist3" value="22,9 °C     •     09:55" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8CBD6;fontColor=#29475C;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="456" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="histSync" value="Datos almacenados en Firestore" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#176B87;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1053" y="525" width="184" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="note1" value="FLUJO: Login → Monitoreo → Activador / Historial" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3F7;strokeColor=#B8CBD6;fontColor=#12304A;fontSize=15;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="655" width="1200" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="note2" value="Nota: prototipo visual. La sincronización real, autenticación, Bluetooth y reglas de seguridad deben comprobarse en la aplicación Android." style="text;html=1;strokeColor=none;fillColor=none;fontColor=#526D7B;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="715" width="1200" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
